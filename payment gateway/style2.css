@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar {
+  background-color: #f6f6f6;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+.navbar .nav {
+  padding-right: 100px;
+}
+
+.navbar .button {
+  padding-left: 20px;
+}
+
+.sidebar {
+  list-style: none;
+  text-decoration: none;
+  position: fixed;
+  top: 120px;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: rgb(20, 20, 87);
+  transition: all .5s;
+}
+
+.sidebar header {
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+  background-image: rgb(26, 26, 131);
+  user-select: none;
+}
+
+.sidebar ul a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: white;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255, 255, 255, .1);
+  border-bottom: 1px solid black;
+  transition: .4s;
+}
+
+.sidebar   ul li:hover a {
+  padding-left: 50px;
+}
+
+.sidebar ul a i {
+  margin-right: 16px;
+}
+#check{
+  display: none;
+}
+label #btn,label #cancel{
+  position: absolute;
+  cursor: pointer;
+  background-color: rgb(26, 26, 131);
+  border-radius: 3px;
+}
+label #btn{
+  left:40px;
+  top:120px;
+  font-size: 35px;
+  color:white;
+  padding:6px 12px;
+}
+label #cancel{
+  z-index:1111;
+  left:-195px;
+  top:120px;
+  font-size: 30px;
+  color:blue;
+  padding:4px 9px;
+  transition: all .5s ease;
+}
+#check:checked ~ .sidebar{
+  left: 0;
+}
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+#check:checked ~ label #cancel{
+  left: 195px;;
+}
+#check:checked ~ section{
+  margin-left:250px
+}
+section{
+  background-position: center;
+  background-size: cover;
+  height:100vh;
+  transition: all .5s ease;
+}
+.main_content{
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+.main_content .card {
+  padding-left: 10px;
+  margin-top: 90px;
+  margin-bottom: 40px;
+}
+.main_content .card .card-body{
+  padding:20px;
+}
+.data {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: space-evenly;
+  padding: 10px;
+  background-color:#c9c3c3;
+  border: none;
+  border-radius: 10px;
+  margin:10px;
+  margin-bottom: 10px;
+}
+.data .vl {
+  border-left: 1px solid rgb(36, 35, 35);
+  height: 130px;
+  padding-left: 20px;
+}
+.main_content h1{
+  font-size: 2vi;
+  font-weight: bold;
+  color: blue;
+}
+.card-title{
+  font-size: 3vi;
+  font-weight: bolder;
+  padding: 0px;
+  color:  rgb(20, 20, 87);
+
+}
+.card-text{
+  font-size: larger;
+  font-weight: bold;
+  padding-bottom: 8px;
+  color:blue
+}
+.data .total{
+  padding-right: 8px;
+}
+.data .spend{
+  padding-left: -8px;
+}
+.data h5{
+  font-size: larger;
+  font-weight: bold;
+}
+.data h2{
+  font-size: 2vi;
+  font-weight: bolder;
+}
+.data p{
+  font-size: large;
+  font-weight: bold;
+}
+.main_content .btn{
+  width:100%;
+  padding-top: 3px;
+  height:45px;
+  margin-top: 20px;
+}
+.main_content .btn1{
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  height:45px;
+  width:100%;
+  border: 5px black;
+  border-radius:10px;
+}
+.main_content .img{
+  top:-30px;
+}
+
+footer{
+  background-color: #111;
+  height: auto;
+  width:100vw;
+  font-family:"Open Snas";
+  padding-top: 40px;
+  color:#fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align:center
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform:capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size:14px;
+}
+.social{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0; 
+}
+.social li{
+  margin:0 10px;
+}
+.social a{
+  text-decoration:none;
+  color:#fff;
+}
+.social a i{
+  font-size:1.1rem;
+  transition: color .4 ease;
+}
+.social a:hover{
+  color:aqua;
+}
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding:20px 0;
+  text-align:center;
+}
+.footer-bottom p{
+  font-size:14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}

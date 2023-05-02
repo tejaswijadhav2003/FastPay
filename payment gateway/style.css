@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+   box-sizing: border-box;
+   margin: 0px; 
+   font-family: 'Poppins', sans-serif;
+}
+.navbar {
+   background-color:#f6f6f6;
+   padding: 10px;
+   font-family: 'Poppins', sans-serif;
+   font-weight: bold;
+   font-size: large;
+}
+.navbar .nav {
+    padding-right: 100px;
+}
+.navbar .button{
+    padding-left: 20px;
+}
+.main {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-content: space-around;   
+}
+.main .title{
+    width: 40%;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+.main .title p{
+    color: blue;
+    font-size: 1.5vi;
+    font-weight: bold;
+}
+.main .title h1{
+    color: rgb(20, 20, 87);
+    font-size: 4vi;
+    font-weight:bolder;
+}
+.main .title h4{
+    color: blue;
+    font-weight: bolder;
+    padding-bottom:20px ;
+}
+.main .title button{
+    background-color:  rgb(20, 20, 87);
+    padding:13px;
+    margin-bottom: 20px;
+}
+.card1 .card-body{
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+.card1 .card-body .fix{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    background-color: #edefff;
+    border: #acaaaa;
+    border-radius: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 60px;
+}
+
+.card1 .card-body .remain{
+    display: flex;
+    justify-content: space-between;
+    align-items: space-between;
+    background-color:#edefff ;
+    border: #acaaaa;
+    border-radius:10px;
+    margin-top: 10px;
+    padding: 10px;
+    height: 60px;
+    margin-bottom: 20px;
+    
+}
+.main .card1 .card-body{
+    margin-right: 200px;
+    margin-top:60px
+}
+.main .card1{
+    width:45%;
+}
+.main .card1 .card-body .fix .card-title1{
+    color: rgb(20, 20, 87);
+    font-weight: bolder ;
+}
+.main .card1 .card-body .fix .fixed{
+    font-weight: bolder ;
+}
+.main .card1 .card-body .remain .card-title2{
+    color: rgb(20, 20, 87);
+    font-weight: bolder ;
+}
+.main .card1 .card-body .remain .Remaining{
+    font-weight: bolder ;
+}
+.main .card1 .card-body .card-link{
+    padding-top: 20px;
+    padding-left: 50px;
+    color: grey;
+    font-weight: bold;
+}
+.reset{
+    background-color:  rgb(20, 20, 87);
+    border:  rgb(20, 20, 87);
+    border-radius: 5px;
+    color: white;
+    width: 100%;
+    height: 40px;
+}
+.mobile img{
+    height:40%;
+    width:40%;
+}
+.mobile p{
+    font-weight: bold;
+}
+.bank img{
+    height:40%;
+    width:40%;
+}
+.bank p{
+    font-weight: bold;
+}
+.self img{
+    height:40%;
+    width:40%;
+}
+.self p{
+    font-weight: bold;
+}
+.Balance img{
+    height:40%;
+    width:40%;
+}
+.Balance img{
+    font-weight:bold;
+}
+.card{
+    margin:30px;
+    border: #000;
+    border-radius: 30px;
+    padding-bottom: 10px;
+}
+.card h2{
+    padding-top:50px;
+    padding-left: 500px;
+    padding-bottom:7px;
+    font-weight: bolder;
+    color: rgb(20, 20, 87);
+}
+.card .card-body {
+    display:flex;
+    align-items: space-evenly;
+}
+
+.info h4{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:blue;
+    font-weight: bolder;
+    padding-top: 20px;
+}
+.info h1{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color:rgb(20, 20, 87);
+    font-weight: bolder;
+    font-size: 4vi;
+    padding: 10px;
+}
+.info p{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 20px;
+    font-size: 1.5vi;
+}
+.feature .img{
+    width: 50%;
+    height:auto;
+}
+.feature{
+    display:flex;
+}
+.card10{
+    margin: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: #000;
+    background-color:#f6f6f6;
+    border-radius: 10px;
+}
+.card10 .card-body h5{
+    font-weight: bolder;
+    font-size:xx-large;
+    color: rgb(20, 20, 87) ;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card10 .card-body ul li{
+    padding:25px;
+    font-size: x-large;
+    color: blue;
+    font-weight: bold;
+}
+footer{
+    background-color: #111;
+    height: auto;
+    width:100vw;
+    font-family:"Open Snas";
+    padding-top: 40px;
+    color:#fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform:capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size:14px;
+}
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0; 
+}
+.social li{
+    margin:0 10px;
+}
+.social a{
+    text-decoration:none;
+    color:#fff;
+}
+.social a i{
+    font-size:1.1rem;
+    transition: color .4 ease;
+}
+.social a:hover{
+    color:aqua;
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding:20px 0;
+    text-align:center;
+}
+.footer-bottom p{
+    font-size:14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+
+
+
+
